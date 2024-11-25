@@ -1,37 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Student ID Cards Project
 
-First, run the development server:
+This is a simple React/Next.js project that displays a list of student ID cards. Each student card shows the student's name, age, roll number, and class. The data is passed via props, and the project is styled using Tailwind CSS for a clean and responsive layout.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Technologies Used
+
+- **Next.js**: A React framework for building static and dynamic web applications.
+- **TypeScript**: A typed superset of JavaScript that helps with code quality and maintainability.
+- **Tailwind CSS**: A utility-first CSS framework for building custom designs quickly.
+- **React**: A JavaScript library for building user interfaces.
+
+## Project Structure
+
+```
+/app
+  /students
+    page.tsx            // Main page displaying the list of student cards
+/components
+  StudentCard.tsx       // Displays individual student card
+  StudentsList.tsx      // Renders a list of student cards
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **`page.tsx`** (inside `/app/students`): This is the page component that renders the list of student ID cards.
+- **`StudentsList.tsx`** (inside `/components`): Maps over the student data and renders individual `StudentCard` components.
+- **`StudentCard.tsx`** (inside `/components`): Displays the details of each student in a styled card.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Displays a list of student ID cards with information such as name, age, roll number, and class.
+- Fully responsive layout with Tailwind CSS, adapting to different screen sizes.
+- Modular components using TypeScript to ensure type safety and maintainability.
 
-## Learn More
+## Installation & Setup
 
-To learn more about Next.js, take a look at the following resources:
+Follow the steps below to run the project locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/student-id-cards.git
+   cd student-id-cards
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies:**
+   Ensure you have Node.js and npm installed, then run:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Start the development server:**
+   Run the following command to start the server:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Open in browser:**
+   Navigate to [http://localhost:3000/students](http://localhost:3000/students) in your browser to view the student ID cards.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# student-id-cards" 
+## Running the Project
+
+- The app will display a page with student ID cards.
+- Each card shows the student's name, age, roll number, and class.
+- The cards are fully responsive and will adjust based on screen size.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
